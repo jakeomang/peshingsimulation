@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Telegram Demo Feed</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body class="feed-page">
+
+    <header class="topbar">
+
+        <div class="brand-area">
+
+            <img
+                src="tg.png"
+                alt="Telegram Demo Logo"
+                class="topbar-logo"
+            >
+
+            <h2>Telegram</h2>
+
+        </div>
+
+        <nav>
+
+            <button>Home</button>
+
+            <button>Messages</button>
+
+            <button>Groups</button>
+
+            <button id="logoutButton">
+                Log Out
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <div class="simulation-banner">
+        SCHOOL CYBERSECURITY AWARENESS SIMULATION
+    </div>
+
+
+    <main class="feed-layout">
+
+        <aside class="sidebar">
+
+            <h3 id="userName">
+                Student
+            </h3>
+
+            <a href="#">
+                Profile
+            </a>
+
+            <a href="#">
+                Saved Messages
+            </a>
+
+            <a href="#">
+                Groups
+            </a>
+
+            <a href="#">
+                Settings
+            </a>
+
+        </aside>
+
+
+        <section class="feed">
+
+            <div class="create-post">
+
+                <div class="fake-input">
+                    What's happening?
+                </div>
+
+                <button id="createPostButton">
+                    Create Post
+                </button>
+
+            </div>
+
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="avatar">
+                        IT
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            IT Department
+                        </strong>
+
+                        <small>
+                            10 minutes ago
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Welcome to the school's cybersecurity
+                    awareness simulation.
+                </p>
+
+                <p>
+                    Always check website addresses before
+                    entering account information.
+                </p>
+
+                <div class="post-actions">
+
+                    <button>
+                        Like
+                    </button>
+
+                    <button>
+                        Comment
+                    </button>
+
+                    <button>
+                        Share
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="avatar">
+                        SC
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Student Council
+                        </strong>
+
+                        <small>
+                            25 minutes ago
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Reminder: Never enter your school password
+                    into websites sent through suspicious
+                    messages.
+                </p>
+
+                <div class="post-actions">
+
+                    <button>
+                        Like
+                    </button>
+
+                    <button>
+                        Comment
+                    </button>
+
+                    <button>
+                        Share
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="post warning-post">
+
+                <h3>
+                    Can you spot the warning signs?
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Unexpected login links
+                    </li>
+
+                    <li>
+                        Requests for passwords
+                    </li>
+
+                    <li>
+                        Urgent messages telling you to act immediately
+                    </li>
+
+                    <li>
+                        Misspelled or unusual website addresses
+                    </li>
+
+                    <li>
+                        Unknown senders
+                    </li>
+
+                </ul>
+
+                <a
+                    href="result.html"
+                    class="learn-button"
+                >
+                    View Simulation Result
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <aside class="contacts">
+
+            <h3>
+                Contacts
+            </h3>
+
+            <p>
+                🟢 Cybersecurity Office
+            </p>
+
+            <p>
+                🟢 IT Support
+            </p>
+
+            <p>
+                ⚪ Student Council
+            </p>
+
+            <p>
+                🟢 School Administrator
+            </p>
+
+        </aside>
+
+    </main>
+
+    <script src="js/feed.js"></script>
+
+</body>
+
+</html>

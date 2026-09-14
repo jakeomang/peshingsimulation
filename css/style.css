@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #4cade1;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 30px;
+}
+
+
+.intro {
+    width: 450px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.intro h1 {
+    font-size: 55px;
+
+    margin: 0 0 10px;
+}
+
+
+.intro p {
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+.intro-logo {
+    display: block;
+
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    margin: 15px auto;
+}
+
+
+.login-box {
+    width: 390px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 20px
+        rgba(0, 0, 0, 0.16);
+}
+
+
+.warning {
+    text-align: center;
+
+    background: #fff3cd;
+
+    color: #664d03;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+input {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 16px;
+
+    border:
+        1px solid
+        #ccc;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #229ed9;
+}
+
+
+button {
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.2s;
+}
+
+
+#demoForm button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #229ed9;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+#demoForm button:hover {
+    background: #168ac1;
+}
+
+
+.notice {
+    text-align: center;
+
+    color: #8a1f1f;
+
+    font-size: 13px;
+
+    margin-top: 16px;
+}
+
+
+.privacy-note {
+    text-align: center;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FEED
+========================= */
+
+.feed-page {
+    background: #eef1f5;
+
+    color: #222;
+}
+
+
+.topbar {
+    min-height: 64px;
+
+    padding: 8px 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #229ed9;
+
+    color: white;
+}
+
+
+.brand-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.topbar-logo {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+}
+
+
+.topbar h2 {
+    margin: 0;
+}
+
+
+.topbar nav {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.topbar nav button {
+    width: auto;
+
+    padding: 9px 12px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.topbar nav button:hover {
+    background:
+        rgba(255, 255, 255, 0.15);
+}
+
+
+.simulation-banner {
+    padding: 10px;
+
+    text-align: center;
+
+    background: #fff3cd;
+
+    color: #664d03;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.feed-layout {
+    max-width: 1200px;
+
+    margin: 25px auto;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        220px
+        minmax(300px, 600px)
+        220px;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+.sidebar,
+.contacts,
+.post,
+.create-post {
+    padding: 18px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.sidebar h3,
+.contacts h3 {
+    margin-top: 0;
+}
+
+
+.sidebar a {
+    display: block;
+
+    padding: 10px 0;
+
+    color: #229ed9;
+
+    text-decoration: none;
+}
+
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+
+.feed {
+    display: grid;
+
+    gap: 18px;
+}
+
+
+.fake-input {
+    padding: 13px;
+
+    margin-bottom: 12px;
+
+    border-radius: 20px;
+
+    background: #eef1f5;
+
+    color: #666;
+}
+
+
+#createPostButton {
+    width: 100%;
+
+    padding: 10px;
+
+    background: #229ed9;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.post-header {
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+
+.post-header small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #777;
+}
+
+
+.avatar {
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #229ed9;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+.post {
+    line-height: 1.6;
+}
+
+
+.post-actions {
+    display: flex;
+
+    gap: 8px;
+
+    border-top:
+        1px solid
+        #ddd;
+
+    padding-top: 12px;
+}
+
+
+.post-actions button {
+    flex: 1;
+
+    padding: 10px;
+
+    background: #e9edf5;
+
+    color: #222;
+}
+
+
+.post-actions button:hover {
+    background: #dce2ea;
+}
+
+
+.warning-post ul {
+    line-height: 1.8;
+
+    padding-left: 22px;
+}
+
+
+.learn-button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 11px 15px;
+
+    border-radius: 6px;
+
+    background: #229ed9;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.learn-button:hover {
+    background: #168ac1;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result-page {
+    min-height: 100vh;
+
+    background: #eef1f5;
+}
+
+
+.result-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+.result-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 20px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+.result-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #229ed9;
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.result-card h1 {
+    margin-bottom: 15px;
+}
+
+
+.result-message {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+.lesson-box {
+    margin: 25px 0;
+
+    padding: 20px;
+
+    text-align: left;
+
+    background: #f6f8fa;
+
+    border-radius: 10px;
+}
+
+
+.lesson-box h2 {
+    margin-top: 0;
+}
+
+
+.lesson-box li {
+    margin-bottom: 10px;
+}
+
+
+.privacy-box {
+    margin-bottom: 25px;
+
+    padding: 15px;
+
+    background: #fff3cd;
+
+    color: #664d03;
+
+    border-radius: 8px;
+
+    line-height: 1.5;
+}
+
+
+.result-button {
+    display: inline-block;
+
+    margin: 5px;
+
+    padding: 12px 18px;
+
+    border-radius: 7px;
+
+    background: #229ed9;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.result-button.secondary {
+    background: #67727e;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+    .container {
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 30px 20px;
+    }
+
+
+    .intro {
+        width: 100%;
+    }
+
+
+    .intro h1 {
+        font-size: 42px;
+    }
+
+
+    .intro-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .login-box {
+        width: 100%;
+
+        max-width: 390px;
+    }
+
+
+    .feed-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sidebar,
+    .contacts {
+        display: none;
+    }
+
+
+    .topbar {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+
+    .topbar nav {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .topbar nav button:not(#logoutButton) {
+        display: none;
+    }
+
+
+    .result-card {
+        padding: 25px 20px;
+    }
+}
